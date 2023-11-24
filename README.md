@@ -8,7 +8,7 @@ My project's name is called forest concert. It's an interactive music playing we
 
 The entrance of [Forest Concert](https://anca-wang.github.io/Landing-Page/)
 
-The two folders within this repository, website and weblog record my source code and developing process respectively.
+The two folders within this repository, [website](https://github.com/Anca-Wang/MSc-Advanced-Project/tree/main/website) and [weblog](https://github.com/Anca-Wang/MSc-Advanced-Project/tree/main/weblog) record my source code and developing process respectively.
 
 This is the landing page:
 <img width="1509" alt="Screenshot 2023-11-17 at 09 00 51" src="https://github.com/Anca-Wang/MSc-Advanced-Project/assets/115659964/418de1da-c840-4a0e-b717-cf5448417b45">
