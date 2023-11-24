@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  backdrop-filter: blur(50px)
+}
+
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+
+
+.parentContainer {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  /* 上下排列 */
+  /* gap: 1px; */
+}
+
+.container {
+  max-width: 500px;
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  /* padding: 10px; */
+  display: inline-block;
+  /* 让容器自适应内容宽度 */
+  vertical-align: top;
+  /* 确保容器顶部对齐 */
+}
+
+.header {
+  display: flex;
+  height: 35px;
+  /* margin-bottom: 10px; */
+}
+
+.title {
+  margin: 10px 0 0 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 20px;
+  height: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+button {
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  height: 35px;
+  width: 135px;
+  color: white;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.buttons button {
+  flex: 0 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.container .buttons {
+  height: auto;
+}
+
+i {
+  font-size: 20px;
+  margin-top: 23px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: rgb(50, 61, 49);
+  /* 鼠标悬停时的背景颜色变化 */
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* 添加阴影效果 */
+}
+
+.button:active {
+  background-color: rgh(29, 33, 36);
+  /* 鼠标点击时的背景颜色 */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  /* 调整阴影大小 */
+}
+
+
+.fa-regular{
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.name {
+  color: white;
+  margin-left: 20px;
+}
+
+.made {
+  margin-top: 15px;
+}
+
+.time {
+  margin-top: 5px;
+}

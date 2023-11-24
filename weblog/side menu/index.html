@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="sidebar">
+    <ul>
+      <a href="https://anca-wang.github.io/Dawn/"><li>Spring</li></a>
+      <li>Summer</li>
+      <li>Fall</li>
+      <li>Winter</li>
+    </ul>
+  </div>
+
+  <div class="line-segment"></div>
+
+  <div class="name">
+    <h5 class="made">Made by Anca</h5>
+    <p class="time">2023</p>
+  </div>
+  
+</body>
+<script>
+  document.querySelector('.menu-icon').addEventListener('mouseover', function() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('open'); // 展开侧边栏
+
+  setTimeout(function() {
+    sidebar.classList.remove('open'); // 5秒后隐藏侧边栏
+  }, 10000); // 5000毫秒 = 5秒
+});
+</script>
+</html>

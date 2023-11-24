@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawn</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <img
+    src="https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    alt="Dawn"
+  >
+
+
+
+  
+  <div class="parentContainer">
+    <div class="container">
+      <h1>Dawn</h1>
+        <div class="header">
+          
+          <p class="title">Major Key</p>
+          <i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>
+        </div>
+        <div class="buttons">
+          <button id="playButton1">Soft Piano</button>
+        
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <p class="title">Sound Effect</p>
+        <i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>
+      </div>
+      <div class="buttons">
+        <button id="playButton2">Water Drop</button>
+        <button id="playButton3">Crisp Bird Call</button>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+<script>
+
+  // examplify an audio from url
+
+  var audio1 = new Audio('https://music-cdn.icons8.com/preview/553/7b811e14-e6d3-40d6-bcea-02f953992ddc.mp3');
+
+  var audio2 = new Audio('https://audio-previews.elements.envatousercontent.com/files/146080895/preview.mp3?response-content-disposition=attachment%3B+filename%3D%22GSUMX3H-large-water-drop.mp3%22');
+
+  var audio3 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=36694&type=mp3');
+
+  //Add eventlistener for each button
+
+  document.getElementById('playButton1').addEventListener('click', function () { audio1.play(); });
+
+  document.getElementById('playButton2').addEventListener('click', function () { audio2.play(); });
+
+  document.getElementById('playButton3').addEventListener('click', function () { audio3.play(); });
+
+  audio2.volume = 0.2;
+
+  
+
+</script>
+
+
+</html>

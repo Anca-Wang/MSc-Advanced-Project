@@ -1,0 +1,95 @@
+/* 图标样式 */
+
+* {
+  margin: 0
+}
+
+
+.menu-icon {
+  color: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* 侧边栏的基本样式 */
+.sidebar {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  white-space: nowrap;
+  z-index: 999;
+  /* 确保侧边栏在图标下面 */
+}
+
+/* 侧边栏内的列表项样式 */
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0px;
+  margin-top: 75px;
+}
+
+.sidebar li {
+  color: white;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* 鼠标悬停时改变字体颜色 */
+.sidebar li:hover {
+  color: rgb(29, 58, 29);
+  text-decoration: underline;
+}
+
+
+.sidebar.open {
+  width: 180px;
+  transition-delay: 0s;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 25px;
+}
+
+i:hover {
+  color: rgb(22, 68, 20);
+}
+
+.line-segment {
+  border: 0;
+  height: 0.5px;
+  width: 180px;
+  margin-left: 0px;
+  background-color: rgb(23, 96, 20);
+  /* 更深的颜色 */
+  margin-top: 600px;
+}
+
+.name {
+  color: rgb(23, 96, 20);
+  margin-left: 20px;
+}
+
+.made {
+  margin-top: 15px;
+}
+
+.time {
+  margin-top: 5px;
+}
