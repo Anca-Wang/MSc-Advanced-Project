@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autumn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-and-info">
+      <img
+        src="https://images.pexels.com/photos/5875923/pexels-photo-5875923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="black Forest">
+      <div class="info-container">
+        <div class="info-header">
+          <div class="title">
+            <h1>Autumn</h1>
+            <i class="fa-regular fa-circle-question comment-button">
+              <p class="comment-text">· Major Key is the main melody, it's the foundation of the season's theme.<br><br>·
+                Sound Effect is the accompany, you can use it the way you enjoy.</p>
+            </i>
+          </div>
+        </div>
+        <div class="info-section major-key">
+          <h3>Major Key</h3>
+          <div class="button-container">
+            <button id="playButton1">Coolish Dusk</button>
+            <audio id="audioPlayer" src="autumn.MP3"></audio>
+          </div>
+        </div>
+        <div class="info-section sound-effect">
+          <h3>Sound Effect</h3>
+          <div class="button-container">
+            <button id="playButton2">Birds Flapping</button>
+            <button id="playButton3">Water Droplets</button>
+            <button id="playButton4">Raven</button>
+            <button id="playButton5">Water Drop</button>
+            <button id="playButton6">Eagle</button>
+            <button id="playButton7">Foliage Rustling</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+
+          <li><a href="https://anca-wang.github.io/Spring/">Spring</a></li>
+
+          <li><a href="https://anca-wang.github.io/Summer/">SUMMER</a></li>
+
+          <li><a href="https://anca-wang.github.io/Autumn/">Autumn</a></li>
+
+          <li><a href="https://anca-wang.github.io/Winter/">winter</a></li>
+
+        </ul>
+      </nav>
+      <p class="copyright">Made BY Anca © 2023</p>
+      <p class="date">11/10/2023</span></p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script>
+
+  // examplify an audio from url
+
+  //https://cms-artifacts.motionarray.com/content/motion-array/1175772/Wind_In_The_Woods_mp3.mp3?Expires=2003733324211&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZfHFvBs2yGkjWU8LHWfbPHQ8DkhvKGoE9nADxBdljjMwlf4uk9vqkLf0hFOtWH4mqxBEGDm6103ucjRAGvlb3LqaIVyU45ScffecNCoF7h68ZfasbuIEH2DYn~A3UHGRvvAyxhoXpP9-sHJ~uE72CRbHfWGndwwEqHP47JLcFN2Up2biN1SSTix4xD52vKPExOvxxlFSnFTqe7Txq3m1cppXJHWRBBROj6CNxaqLQgTHxO7DWa9okZzT1Nqi2r6htsoQU6UuyjOZj3D1XQM5uPpqFZxCa398twdIABpfwfjAswChNUdJz7YY3dsceVCIYiDm5uYA7pLxHD1K~4RB7w__
+
+  // var audio1 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=35266&type=mp3');
+  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/968712/Birds_Fly_Away_mp3.mp3?Expires=2003744820594&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=1imFMTGAkIYLLz08nawDFwPziAnMSthWNafLkiAVNKRSmtOFd46J-45~gG2f8N~uIs2a5iL0sYqkrGKcKHLlCKECNxXlqS5qU0Kvbb4aLNiQq3fxLoy1ytFzmPmacn8W9ICYmgEMr8jxQqbxFFIT5onId9uVFR1VYxoorRnqbYGcr35NDPS4a5hQ-kWNTheos5oeoK991uQ1fwPYZw3RDoPrCCPht7MgzHczF-XfnV142ZZUn~2cr8jDq4A90v6HmFrepuaDsZ8xZiX7TFcU7BmYHvFV0m70rNkOvWPZQkw7L~qGc-bgIJYKPBYidHM-eaKJd3jzrvCwPuPXW6Zihg__');
+  var audio3 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1103700/Cave_Water_Droplets_mp3.mp3?Expires=2003744513987&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=1wVnW3RgYxMnETApVSM4lI4hfhZe-Hiqcuz-wjRhjJpOBgwgItGlC4SHEe7Pnx6hfT~ruNOxUVh~S6UTWeJI5ZaYvIKzJ3MiE~WsQkL38S7joUVHlQOBEmSB19PXKotzQlwHWauHEl~u9A0Vr3wlyvl2~qrelDteHu30aicAyB19OLa45UxQNpb1pOoe0WAKJwgvcGJqbqm4TVErxOlBjpYdPYI2vM5~8JZzhPZCsxFmj27rMIX2gM8VnwhOfnM2lPAR6u~paiViS-emHo31j7D8LmgySkAYId8a4p~r1u1AnhLvOC~~UWsvoFfel3UEItGqAxNYOAoacI5CXMx0fg__');
+  var audio4 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/216482/Horror_Raven_mp3.mp3?Expires=2003745289646&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=GYE58XykRS9ra-6zP~4LerPv2TZm89qENlNacXAJQL0fhIv7LUp2--9AfV~0EXwYIAGQqsQjp5MGib3YUJ0LELecf3EQephpiS5axwIoI8GaBE0c0kk-oOcOvI7FjUg5odohnJx6th2dZGs5x-2uO8nptsIikMGXNszAJCStFfgN8JVCCm7MRaRhIogKJhyRVgWl1rYhhYBIbvdVFI42oCXXee3rCCbXxG141iaPVfp7fjeG4jpaf1pl5djZhXteS-htleeX8GVTQ-foFoubzek5uZgJma0WeAxqupFtcsq2njd1SJ5B-3fm-gNQ4I8BW4CWQp5TgMzojq9YY~JqVg__');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1023006/Water_Drop_mp3.mp3?Expires=2003733609423&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZxPDjqXG0q6wOfufYyqk6eLq7z1cNdMcgQDlIlQt1Ftz~6FgYRd3ZGEDUT4Fbivk6SjMcUCTPTEguB63PHMipLeRMbuQVV5HkSs32ZuTeflpBOL9uor~V2Kv5Nttp63T~xgSuYpSLLEKZW7p2cW-Gy6B-Mk3okWjKBnrl5dJs9LOfwrLtUg9zYf1LdiUrzbRBrh66Nm24Q-lqw9dfBjpuLE1zLyDUEBDzT-FMoGAdUigRqRk7uu4AbvSn1k08pUxDiy4r4DZLQgMerl8VoAwLDzcyUKmGkAxmSjrrPrz6oABMPsKoV88LDyRnOrzGErRQy3dNkNVrjZoiCq6itcajA__');
+  var audio6 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/307393/Eagle_mp3.mp3?Expires=2003744886364&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=T-kleyf6PsJswqda-03lSYUKWUkU3PwdHyB~wOaugsInWWLzNXFZkGOzLbK9-tGupsHcaIhg0V-cy9NJsyy~zEZEq1kwbrYRxaKBsTNCR7RtrWStsX70-6t1gU3aZ0V9KRV~OAC33scnlTO1G-cpyJdJ3MyedRULsFatqXiPz09RYnkCmFQz48bgovziAfKe68qVMmc440UkxH6GE1zBdOBEfhlxbN7Sj6sbCQsJ~76sKeRmBbEcLFAkI5Y8my99jYm~jf3TX-MMq4RAjk0gpwacs6-lTye4nGDxlWshu7edMCvmC9ltcFJpStO4l3NUwrt0JPtdLKu6gtOzT8SggA__');
+  var audio7 = new Audio('https://audiocdn.epidemicsound.com/ES_ITUNES/Foliage%20Rustle%204/ES_Foliage%20Rustle%204.mp3');
+
+
+
+  //Add eventlistener for each button
+
+  // document.getElementById('playButton1').addEventListener('click', function () { audio1.play(); });
+  document.getElementById('playButton2').addEventListener('click', function () { audio2.play(); });
+  document.getElementById('playButton3').addEventListener('click', function () { audio3.play(); });
+  document.getElementById('playButton4').addEventListener('click', function () { audio4.play(); });
+  document.getElementById('playButton5').addEventListener('click', function () { audio5.play(); });
+  document.getElementById('playButton6').addEventListener('click', function () { audio6.play(); });
+  document.getElementById('playButton7').addEventListener('click', function () { audio7.play(); });
+
+
+
+  document.getElementById('playButton1').addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  });
+
+  audio7.volume = 2;
+
+</script>
+
+</html>

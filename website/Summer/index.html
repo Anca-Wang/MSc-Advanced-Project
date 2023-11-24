@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-and-info">
+      <img src="https://images.pexels.com/photos/775200/pexels-photo-775200.jpeg" alt="black Forest">
+      <div class="info-container">
+        <div class="info-header">
+          <div class="title">
+            <h1>Summer</h1>
+            <i class="fa-regular fa-circle-question comment-button">
+              <p class="comment-text">· Major Key is the main main melody, it's the foundation of the theme.<br><br>·
+                Sound Effect is the accompany, you can use it the way you enjoy.</p>
+            </i>
+          </div>
+        </div>
+        <div class="info-section major-key">
+          <h3>Major Key</h3>
+          <div class="button-container">
+            <button id="playButton1">Black Forest</button>
+            <!-- <audio id="audioPlayer" src="dawn.MP3"></audio> -->
+          </div>
+        </div>
+        <div class="info-section sound-effect">
+          <h3>Sound Effect</h3>
+          <div class="button-container">
+            <button id="playButton2">Rain</button>
+            <button id="playButton3">Crickets Chirping</button>
+            <button id="playButton4">Thunder</button>
+            <!-- <audio id="audioPlayer" src="sunfrost.MP3"></audio> -->
+            <button id="playButton5">Storm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+
+          <li><a href="https://anca-wang.github.io/Spring/">Spring</a></li>
+
+          <li><a href="https://anca-wang.github.io/Summer/">SUMMER</a></li>
+
+          <li><a href="https://anca-wang.github.io/Autumn/">Autumn</a></li>
+
+          <li><a href="https://anca-wang.github.io/Winter/">winter</a></li>
+
+        </ul>
+      </nav>
+      <p class="copyright">Made BY Anca © 2023</p>
+      <p class="date">11/10/2023</span></p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script>
+
+  // examplify an audio from url
+
+  var audio1 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=35266&type=mp3');
+  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/114838/Rain_With_Lightning_-_Thunder_Storm_mp3.mp3?Expires=2003733761229&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=YG8HVcM4ajkHxBE5DigDUeVa31PMQkXRwzhD9abm~ni1Lkar6-31d4~G32tTDqQyEjH4mW5fezuS0kP2GW4oK~YsE37W1OSpwEePkmqNz37ShBHiQh1qdnDy3Jm2ulpSk5lZGEJOzgKuV1JClvTf2sWANlhIkv91BIv73it5WfPrKMrWjliMcZpvhRbWCodqGENFEWd~kiuPW~JMC2DWnzZYQV~0tgN4LbQpUwrCnErRF4di2jTMU1PDuwPtOzdSX~3AMEx592Zs19GFES37VSHG1E-NBGvPRwk-dGHbpYaGW0yXYHuNOhyPxr3iAQy8zoqF6GDhkPy9g74yWZCaDw__');
+  var audio3 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/357144/Crickets_Chirping_FX_Pack_mp3.mp3?Expires=2003747236421&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=nlJmfdKtT26PoRXTeHfOAl2Ns4UjHWIvnxIdUPJvSmjLzw~fK9XFKWd1COtuWK3h0JhYKl0JaW7~jBHwZFQnuzqwjnqLRzCvLYA-unHOoVAS5NFh859nI-nCrASa4c023W9SCAZhPOA2~QQ3vO5G~~RFu6W9flK13Q5K8TGc4aoGLfz3T-~CIkzwKmGZJWWpviHTg1Rg6e~VonBZy5xSe-d1ovGjfpq5lUcQHB912N38Ybh7k3h-22EawtPqB6iVEyAXNNBBchCRMswUSpL-C-M7IKEf78AaEoJiVwNKYHxeDC8Rlx1o~FOq5N7MZk9ViKaepPuCHadt8mSGA1MSsg__');
+  var audio4 = new Audio('https://audiocdn.epidemicsound.com/ES_ITUNES/Thunder%20Clap%201/ES_Thunder%20Clap%201.mp3');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/910795/Thunder_mp3.mp3?Expires=2003733770399&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=sSw49EoJhZUhrcCBbtWHYJJVyZtPvDy4WqNjm8kee5LqbmsXid7T60NxoMjWErzcfawlwhSP4D~QjglHPFs8llmbd89XODjWxAsPPrh9KFocGi~RkODhrG81fMOyg59-ISF24czq~QxAQw4AbCfgRrVwjtOgUiFlxCgffKInCPUnqBJ3NY7KpBq24cFUF76R7imq5VefN1i79ZOSUJkFhzYRIXEe~gjjWGCu2s4ViqEB2UjVa8wvTHCWNIwFtCRJlp5oKAVAKuvW~T55-~177evJvQ3Qxy89ID~8N~yly~M-eYT77ua6qCMN3zvPPEurO565161tehP3IJPbngkE1w__');
+
+
+  //Add eventlistener for each button
+
+  document.getElementById('playButton1').addEventListener('click', function () { audio1.play(); });
+  document.getElementById('playButton2').addEventListener('click', function () { audio2.play(); });
+  document.getElementById('playButton3').addEventListener('click', function () { audio3.play(); });
+  document.getElementById('playButton4').addEventListener('click', function () { audio4.play(); });
+  document.getElementById('playButton5').addEventListener('click', function () { audio5.play(); });
+
+  // audio2.volume = 1.2;
+
+  document.getElementById('playButton1').addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  });
+
+</script>
+
+</html>
